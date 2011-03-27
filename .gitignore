@@ -1,3 +1,6 @@
 .DS_Store
 *.pyc
 settings_local.py
+test.db
+testapp/
+./media/*
