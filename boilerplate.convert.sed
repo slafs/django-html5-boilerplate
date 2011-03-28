@@ -17,7 +17,10 @@ s/<\/\(footer\)>/{% endblock \1 %}&/g
 s/ src=\(["']\)\([^\/]\)/ src=\1{{ STATIC_URL }}\2/g
 s/ href="[\/]\{0,1\}/ href="{{ STATIC_URL }}/g
 
-## only first occurance
+#humans.txt
+0,/\( *\)<link/s##\1<link type="text/plain" rel="author" href="{{ STATIC_URL }}humans.txt" />\n&#
+
+## only first occurrence
 0,/\( *\){% comment %} Place .*favicon.ico/s//\1{% block extra_meta %}{% endblock %}\n\n&/  
 
 0,/<\/head>/s//{% block extra_head %}{% endblock %}\n\n&/

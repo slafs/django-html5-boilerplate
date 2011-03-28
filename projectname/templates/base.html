@@ -21,9 +21,10 @@
 
   {% block extra_meta %}{% endblock %}
 
-  {% comment %} Place img/favicon.ico & img/apple-touch-icon.png in the root of your domain and delete these references {% endcomment %}
-  <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
-  <link rel="apple-touch-icon" href="{{ STATIC_URL }}img/apple-touch-icon.png">
+  {% comment %} Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references {% endcomment %}
+  <link type="text/plain" rel="author" href="{{ STATIC_URL }}humans.txt" />
+  <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+  <link rel="apple-touch-icon" href="{{ STATIC_URL }}apple-touch-icon.png">
 
 
   {% comment %} CSS: implied media="all" {% endcomment %}
