@@ -16,8 +16,6 @@ s/<\/\(footer\)>/{% endblock \1 %}&/g
 
 s/ src=\(["']\)\([^\/]\)/ src=\1{{ STATIC_URL }}\2/g
 s/ href="[\/]\{0,1\}/ href="{{ STATIC_URL }}/g
-s/favicon\.ico/img\/&/
-s/apple-touch-icon\.png/img\/&/
 
 ## only first occurance
 0,/\( *\){% comment %} Place .*favicon.ico/s//\1{% block extra_meta %}{% endblock %}\n\n&/  
