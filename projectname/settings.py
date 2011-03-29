@@ -27,6 +27,9 @@ LANGUAGES = (('en', gettext('English')),)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
+    'shpaml_loader.filesystem',
+    'shpaml_loader.app_directories',
+    'shpaml_loader.eggs',
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
     #'django.template.loaders.eggs.Loader',
