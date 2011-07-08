@@ -1,4 +1,4 @@
 Django==1.3
-django-debug-toolbar==0.8.4
-hg+https://bitbucket.org/jiaaro/django-shpaml-template-loader
+django-debug-toolbar==0.8.5
+hg+https://bitbucket.org/jiaaro/django-shpaml-template-loader#egg=django_shpaml_template_loader==0.2.1
 
